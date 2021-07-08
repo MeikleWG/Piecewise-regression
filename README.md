@@ -10,3 +10,5 @@ Constants include:
 Input file needs to have the following format:
 1. First column is date and time of sample, with the format MM/DD/YYYY hh:mm
 2. All other columns are weight values. Column headers will appear in output file.
+
+Included is a sample input file.
