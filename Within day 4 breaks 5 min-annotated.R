@@ -1,11 +1,12 @@
 #
 library(lubridate)
-#library(plyr)
 library(ggplot2)
 library(nlme)
 library(chron)
 library(segmented)
-setwd("C:/Users/William Meikle/Documents/Bees/Meetings/Penn State modeling workshop")
+
+#Set the user directory
+#setwd("C:/Users/...")
 
 # sun function
 suncalc <- function(d,Lat,Long){
@@ -31,7 +32,7 @@ suncalc <- function(d,Lat,Long){
 # Read data
 #
 n_hives = 4
-main_data = read.table("PennState_4hives_10d_03.txt", header = TRUE, sep = "\t", colClasses = c("character", rep("numeric", n_hives)))
+main_data = read.table("Sample_4hives_10days.txt", header = TRUE, sep = "\t", colClasses = c("character", rep("numeric", n_hives)))
 colnames(main_data) = c("date", "weight01", "weight02", "weight03", "weight04")
 main_data$date <- as.POSIXct(main_data$date,format='%m/%d/%Y %H:%M')
 
@@ -286,7 +287,7 @@ Model_vs_data.plot <- ggplot(data =validation, mapping =aes(x =time_period1, y =
 Model_vs_data.plot <- Model_vs_data.plot + geom_line(aes(x =time_period1, y =model_output, color = 2))
 Model_vs_data.plot
 
-write.table(Final_01, file = "PennState_4hives_10d_03_output01.txt", append = FALSE, 
+write.table(Final_01, file = "Sample_4hives_10days_output01.txt", append = FALSE, 
     quote = TRUE, sep = " ", eol = "\n", na = "NA", dec = ".", row.names = FALSE, 
     col.names = TRUE, qmethod = c("escape", "double"), fileEncoding = "")
 
