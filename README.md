@@ -1,4 +1,6 @@
 # Piecewise-regression
+This program is written to use the associated sample data file.
+If another data file is used, the variable names needs to be modified to view the graph of raw data.
 This script requires input in the form of constants and an input text file.
 Constants include:
 1. Latitude and longitude of study site in digital form (default = Santa Rita Experimental Range, Arizona).
