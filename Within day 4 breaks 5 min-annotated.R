@@ -291,8 +291,4 @@ write.table(Final_01, file = "Sample_4hives_10days_output01.txt", append = FALSE
     quote = TRUE, sep = " ", eol = "\n", na = "NA", dec = ".", row.names = FALSE, 
     col.names = TRUE, qmethod = c("escape", "double"), fileEncoding = "")
 
-Rep_v_iter
-			
-write.table(Rep_v_iter, file = "Rep_v_iter_output01.txt", append = FALSE, 
-    quote = TRUE, sep = " ", eol = "\n", na = "NA", dec = ".", row.names = FALSE, 
-    col.names = TRUE, qmethod = c("escape", "double"), fileEncoding = "")
+
