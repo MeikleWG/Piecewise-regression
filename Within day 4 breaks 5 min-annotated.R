@@ -8,7 +8,7 @@ library(segmented)
 #Set the user directory
 #setwd("C:/Users/...")
 
-# sun function
+# sun function, used to provide estimates for break points.
 suncalc <- function(d,Lat,Long){
 	rad<-function(x)pi*x/180
 	R=6378
