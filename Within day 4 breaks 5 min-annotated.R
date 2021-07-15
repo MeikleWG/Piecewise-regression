@@ -1,7 +1,6 @@
 #
 library(lubridate)
 library(ggplot2)
-library(nlme)
 library(chron)
 library(segmented)
 
